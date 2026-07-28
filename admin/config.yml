@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: ripplepilates/ripplepilates.github.io
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "gallery"
+    label: "画像管理"
+
+    files:
+      - label: "サイト画像"
+        name: "images"
+
+        file: "content/images.yml"
+
+        fields:
+          - label: "トップ画像"
+            name: "hero"
+            widget: "image"
+
+          - label: "スタジオ画像"
+            name: "studio"
+            widget: "image"
+
+          - label: "プロフィール画像"
+            name: "profile"
+            widget: "image"
