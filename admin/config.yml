@@ -8,12 +8,12 @@ collections:
     label: "画像管理"
     files:
       - file: "content/images.yml"
-        label: "サイト画像"
-        name: "site_images"
+        label: "カレンダー画像"
+        name: "calendar_images"
         fields:
-          - label: "トップ画像"
-            name: "hero"
+          - label: "カレンダー画像1"
+            name: "calendar1"
             widget: "image"
-          - label: "店舗画像"
-            name: "studio"
+          - label: "カレンダー画像2"
+            name: "calendar2"
             widget: "image"
