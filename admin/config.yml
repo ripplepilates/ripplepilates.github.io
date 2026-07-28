@@ -7,24 +7,19 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "gallery"
+  - name: "images"
     label: "画像管理"
 
     files:
-      - label: "サイト画像"
-        name: "images"
-
-        file: "content/images.yml"
+      - file: "content/images.yml"
+        label: "サイト画像"
+        name: "site_images"
 
         fields:
           - label: "トップ画像"
             name: "hero"
             widget: "image"
 
-          - label: "スタジオ画像"
+          - label: "店舗画像"
             name: "studio"
-            widget: "image"
-
-          - label: "プロフィール画像"
-            name: "profile"
             widget: "image"
