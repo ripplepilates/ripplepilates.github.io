@@ -1,25 +1,19 @@
 backend:
-  name: github
-  repo: ripplepilates/ripplepilates.github.io
+  name: git-gateway
   branch: main
-
 media_folder: "images"
 public_folder: "/images"
-
 collections:
   - name: "images"
     label: "画像管理"
-
     files:
       - file: "content/images.yml"
         label: "サイト画像"
         name: "site_images"
-
         fields:
           - label: "トップ画像"
             name: "hero"
             widget: "image"
-
           - label: "店舗画像"
             name: "studio"
             widget: "image"
