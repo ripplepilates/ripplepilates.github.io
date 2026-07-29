@@ -674,7 +674,9 @@
 
 <script>
   document.querySelectorAll('#calendar1, #calendar2').forEach(function(img) {
-    img.src = img.src + '?t=' + new Date().getTime();
+    var now = new Date();
+    var hourKey = now.getFullYear() + '-' + (now.getMonth()+1) + '-' + now.getDate() + '-' + now.getHours();
+    img.src = img.src + '?v=' + hourKey;
   });
 </script>
 
