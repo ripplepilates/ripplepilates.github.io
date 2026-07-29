@@ -143,6 +143,16 @@ main{
 }
 
 
+
+.bk1{
+	background-image: url(../images/bk_left.png), url(../images/bk_right.png);
+	background-position: left top 200px , right top 200px;
+	background-repeat: no-repeat;
+	background-size: 250px auto;
+}
+
+
+
   /* ---------- section eyebrow / heading ---------- */
 .eyebrow{
     color:var(--green); font-size:clamp(22px,3vw,30px); font-weight:600; text-align:center;
@@ -420,6 +430,10 @@ main{
 	margin-left: 10px;
 }
 
+.program5{
+	margin-top: -60px;
+}
+
 .program5 p{
 	text-align: center;
 	margin-bottom: 5px;
@@ -470,6 +484,11 @@ main{
 .price-block3 div dl dt{
 	font-size: 22px;
 }
+
+.price-block3 div dl dt span{
+	font-size: 18px;
+}
+
 .price-block3 div dl dt::before{
 	font-family: FontAwesome;
     content: "\f111";
@@ -569,8 +588,9 @@ main{
 
 .program7{
 	width: 100%;
-	max-width: 600px;
+	max-width: 800px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .program7 img{
@@ -685,7 +705,7 @@ main{
 	height: auto;
 }
 
-..staff-card2 .staff-info1{
+.staff-card2 .staff-info1{
 	
 }
 
@@ -721,11 +741,12 @@ main{
 
 }
 
+
+
 .studio-info h3{
 	font-size:18px;
 	display:flex;
 	align-items:center;
-	color: var(--green);
 }
 
 .studio-info h3 span{
@@ -733,11 +754,25 @@ main{
 }
 
 
+.studio2{
+	display: flex;
+	justify-content: center;
+	gap: 0 20px;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.studio2 p::before{
+	font-family: FontAwesome;
+    content: "\f111";
+    margin-right: 5px;
+}
+
+
 .studio-name{
 	font-size:18px;
 	display:flex;
 	align-items:center;
-	color: var(--green);
 }
 
 .studio-name span{
@@ -745,9 +780,8 @@ main{
 }
 
 .studio1{
-	color: #f39800;
 	width: 130px;
-	border: 2px solid #f39800;
+	border: 2px solid #00a956;
 	padding: 5px;
 	border-radius: 20px;
 	text-align: center;
@@ -758,7 +792,6 @@ main{
 	width: 100%;
 	text-align: center;
 	font-size:13px;
-	color:var(--ink-soft);
 	line-height:1.8;
 	margin-bottom:16px;
 }
@@ -767,7 +800,6 @@ main{
 	font-family: FontAwesome;
     content: "\f041";
     margin-right: 5px;
-	color: #1fa686;
 }
 
 
@@ -788,13 +820,12 @@ main{
 }
 
 .studio-table table td{
-	color: #f39800;
 }
 
 
 .studio-info ul{
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: center;
 	gap: 0 5px;
 	width: 100%;
@@ -808,7 +839,7 @@ main{
 	font-family: FontAwesome;
     content: "\f111";
     margin-left: 5px;
-	color: #1fa686;
+
 }
 
 
@@ -869,6 +900,44 @@ main{
     margin-right: 5px;
 }
 
+.color1,
+.color1 span,
+.addr1 span::before,
+.studio2 p::before,
+.studio1{
+	color: #00a956;
+}
+
+
+
+.color2,
+.addr2 span::before,
+.studio-info ul.list1 li:first-child::before{
+	color: #00aebb;
+}
+
+
+
+.color3,
+.addr3 span::before,
+.studio-info ul.list2 li:first-child::before{
+	color: #f39700;
+}
+
+.color4,
+.addr4 span::before,
+.studio-info ul.list3 li:first-child::before{
+	color: #0068b6;
+}
+
+
+.studio3{
+	text-align: center;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+
 @media (max-width:700px){ .studio-card{ grid-template-columns:1fr; } .studio-map{ min-height:180px; } }
 
 
@@ -897,6 +966,12 @@ footer{ background:var(--white);}
 		text-align: left;
 	}
 	
+	.bk1{
+		background-image: url(../images/bk_left.png), url(../images/bk_right.png);
+		background-position: left top 100px , right top 100px;
+		background-repeat: no-repeat;
+		background-size: 100px auto;
+	}	
 	
 	
 	.about{
@@ -1117,7 +1192,7 @@ footer{ background:var(--white);}
 		left: 0;
 		top: 0;
 		border-radius: 0 100px 100px 0;
-		margin-bottom: 120%;
+		margin-bottom: 200%;
 	}
 
 
