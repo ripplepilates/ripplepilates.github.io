@@ -315,9 +315,9 @@
 				
 				
 			<div class="program7">	
-			　  <p><img src="https://res.cloudinary.com/o5vjtxmu/image/upload/calender1_nwchqe.jpg?ver=123" alt="ピラティススタジオ　リップル"></p>
+			　  <p><img id="calendar1" src="https://res.cloudinary.com/o5vjtxmu/image/upload/calender1_nwchqe.jpg" alt="ピラティススタジオ　リップル"></p>
 				
-				<p><img src="https://res.cloudinary.com/o5vjtxmu/image/upload/calender2_bbyiql.jpg" alt="ピラティススタジオ　リップル"></p>
+				<p><img id="calendar2" src="https://res.cloudinary.com/o5vjtxmu/image/upload/calender2_bbyiql.jpg" alt="ピラティススタジオ　リップル"></p>
 				
 				<p>教室カレンダーは毎月15日に翌月分が更新されます</p>
 			</div>	
@@ -670,6 +670,12 @@
     });
   }, { threshold:0.15 });
   document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));*/
+</script>
+
+<script>
+  document.querySelectorAll('#calendar1, #calendar2').forEach(function(img) {
+    img.src = img.src + '?t=' + new Date().getTime();
+  });
 </script>
 
 	</body>
